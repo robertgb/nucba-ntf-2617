@@ -7,6 +7,16 @@
     <title>Nucba NFT</title>
     <link rel="stylesheet" href="./assets/styles.css" />
     <link rel="stylesheet" href="./assets/mediaqueries.css" />
+    <link rel="stylesheet" href="./assets/animaciones.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <link rel="icon" type="image/png" href="./assets/img/favicons/favicon-32x32.png">
   </head>
   <body>
     <header>
@@ -18,33 +28,29 @@
         <input type="checkbox" id="menu-toggle" />
         <ul class="navbar-list">
           <li>
-            <a href="#">Home</a>
+            <a href="#hero">Home</a>
           </li>
           <li>
-            <a href="#">Descubre</a>
+            <a href="#discover">Descubre</a>
           </li>
           <li>
-            <a href="#">BTC</a>
+            <a href="#products">BTC</a>
           </li>
           <li>
-            <a href="#">Youtube</a>
+            <a href="https://www.youtube.com/c/Nucbaok" target="_blank">Youtube</a>
           </li>
           <li>
-            <a href="#">Contactenos</a>
+            <a href="https://nucba.com.ar" target="_blank">Contactenos</a>
           </li>
         </ul>
         <label for="cart-toggle" class="cart-label">
-          <img
-            src="./assets/img/cart-icon.svg"
-            alt="Carrito de compras"
-            class="cart-icon"
-          />
+          <i class="fa-solid fa-cart-shopping cart-icon"></i>
         </label>
         <input type="checkbox" id="cart-toggle" />
         <div class="cart">
           <h2>Tus NFTs</h2>
           <div class="cart-item">
-            <img src="./assets/img/cart/cart-img.png" alt="un producto">
+            <img src="./assets/img/cart/cart-img.png" alt="un producto" />
             <div class="item-info">
               <h3 class="item-title">Messi</h3>
               <p class="item-bid">Current Bid</p>
@@ -57,7 +63,7 @@
             </div>
           </div>
           <div class="cart-item">
-            <img src="./assets/img/cart/cart-img.png" alt="un producto">
+            <img src="./assets/img/cart/cart-img.png" alt="un producto" />
             <div class="item-info">
               <h3 class="item-title">Messi</h3>
               <p class="item-bid">Current Bid</p>
@@ -70,7 +76,7 @@
             </div>
           </div>
           <div class="cart-item">
-            <img src="./assets/img/cart/cart-img.png" alt="un producto">
+            <img src="./assets/img/cart/cart-img.png" alt="un producto" />
             <div class="item-info">
               <h3 class="item-title">Messi</h3>
               <p class="item-bid">Current Bid</p>
@@ -83,7 +89,7 @@
             </div>
           </div>
           <div class="cart-item">
-            <img src="./assets/img/cart/cart-img.png" alt="un producto">
+            <img src="./assets/img/cart/cart-img.png" alt="un producto" />
             <div class="item-info">
               <h3 class="item-title">Messi</h3>
               <p class="item-bid">Current Bid</p>
@@ -96,7 +102,7 @@
             </div>
           </div>
           <div class="cart-item">
-            <img src="./assets/img/cart/cart-img.png" alt="un producto">
+            <img src="./assets/img/cart/cart-img.png" alt="un producto" />
             <div class="item-info">
               <h3 class="item-title">Messi</h3>
               <p class="item-bid">Current Bid</p>
@@ -112,17 +118,19 @@
           <span class="divider"></span>
 
           <div class="cart-total">
-            <p>Total: </p>
+            <p>Total:</p>
             <span>18.3 ETH</span>
           </div>
           <button class="btn-add">Comprar</button>
         </div>
+
+        <div class="overlay"></div>
       </nav>
     </header>
     <main>
       <section id="hero">
         <div class="hero-info">
-          <h1>Descubre la nueva era de Cripto</h1>
+          <h1>Descubre la nueva era de <span>Cripto</span></h1>
           <p>
             NUCBA NFT es el primer Marketplace educativo tecnológico de NFT, que
             son elementos digitales épicos que realmente puedes poseer. Los
@@ -374,6 +382,8 @@
             </div>
           </div>
         </div>
+
+        <button class="btn-load">Ver Más</button>
       </section>
     </main>
 
